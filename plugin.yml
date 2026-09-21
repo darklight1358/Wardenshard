@@ -1,0 +1,6 @@
+name: WardenShardPlugin
+version: 1.0
+main: com.wardensmp.WardenShardMain
+api-version: 1.20
+author: Darklight
+description: Adds a custom Warden Shard item with sonic boom shrieks!
