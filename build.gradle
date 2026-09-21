@@ -7,12 +7,13 @@ version = '1.0'
 
 repositories {
     mavenCentral()
-    // The only working repository link we need
-    maven { url = 'https://spigotmc.org' }
+    // PaperMC's official, highly active repository hub
+    maven { url = 'https://papermc.io' }
 }
 
 dependencies {
-    compileOnly 'org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT'
+    // Downloads the stable Paper library for version 1.20.4
+    compileOnly 'io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT'
 }
 
 java {
@@ -24,4 +25,5 @@ java {
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
+
 
