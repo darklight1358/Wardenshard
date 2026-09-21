@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.wardensmp'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://spigotmc.org' }
+    maven { url = 'https://sonatype.org' }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
