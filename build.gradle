@@ -7,8 +7,8 @@ version = '1.0'
 
 repositories {
     mavenCentral()
+    // The only working repository link we need
     maven { url = 'https://spigotmc.org' }
-    maven { url = 'https://sonatype.org' }
 }
 
 dependencies {
@@ -24,3 +24,4 @@ java {
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
+
